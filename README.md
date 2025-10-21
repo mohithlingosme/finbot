@@ -1,9 +1,9 @@
-# TradeBot - Modular Trading Bot Framework
+# FINBOT - Modular Trading Bot Framework
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A comprehensive, modular trading bot framework built in Python for intraday trading in Indian markets (NSE/BSE) and global assets. TradeBot provides a complete ecosystem for strategy development, backtesting, risk management, and live trading.
+A comprehensive, modular trading bot framework built in Python for intraday trading in Indian markets (NSE/BSE) and global assets. FINBOT provides a complete ecosystem for strategy development, backtesting, risk management, and live trading.
 
 ## 🚀 Features
 
@@ -55,8 +55,8 @@ A comprehensive, modular trading bot framework built in Python for intraday trad
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tradebot.git
-cd tradebot
+git clone https://github.com/yourusername/FINBOT.git
+cd FINBOT
 
 # Install dependencies
 pip install -r requirements.txt
@@ -85,12 +85,12 @@ The framework uses several key libraries:
 
 ## ⚙️ Configuration
 
-TradeBot uses YAML configuration files for easy customization. Copy and modify `config.yaml`:
+FINBOT uses YAML configuration files for easy customization. Copy and modify `config.yaml`:
 
 ```yaml
 # General Settings
 general:
-  project_name: "tradebot"
+  project_name: "FINBOT"
   log_level: "INFO"
 
 # Market Configuration
@@ -165,7 +165,7 @@ pytest tests/test_backtest.py
 ## 🏗️ Architecture
 
 ```
-tradebot/
+FINBOT/
 ├── core/                    # Core trading engine
 │   ├── engine.py           # Main trading orchestrator
 │   ├── portfolio.py        # Portfolio management
@@ -322,7 +322,7 @@ The framework includes comprehensive tests for all components:
 pytest
 
 # Run with coverage
-pytest --cov=tradebot
+pytest --cov=FINBOT
 
 # Run specific test categories
 pytest tests/test_indicators.py    # Technical indicators
@@ -338,8 +338,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Development Setup
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/tradebot.git
-cd tradebot
+git clone https://github.com/yourusername/FINBOT.git
+cd FINBOT
 
 # Create virtual environment
 python -m venv venv
@@ -353,7 +353,7 @@ pip install -r requirements-dev.txt
 pytest
 
 # Run linting
-flake8 tradebot/
+flake8 FINBOT/
 ```
 
 ## 📝 License
@@ -368,10 +368,10 @@ The authors and contributors are not responsible for any financial losses incurr
 
 ## 📞 Support
 
-- 📧 Email: support@tradebot.dev
-- 💬 Discord: [TradeBot Community](https://discord.gg/tradebot)
-- 📖 Documentation: [docs.tradebot.dev](https://docs.tradebot.dev)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/tradebot/issues)
+- 📧 Email: support@FINBOT.dev
+- 💬 Discord: [FINBOT Community](https://discord.gg/FINBOT)
+- 📖 Documentation: [docs.FINBOT.dev](https://docs.FINBOT.dev)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/FINBOT/issues)
 
 ## 🙏 Acknowledgments
 
