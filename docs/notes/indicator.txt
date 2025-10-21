@@ -1,0 +1,198 @@
+Volume & accumulation / order-flow
+24-hour volume — total traded volume over the last 24 hours.
+ Use: confirms price moves (high volume = conviction). Pros: simple confirmation. Cons: noisy intraday spikes. Rating: 4/5
+Accumulation / Distribution (A/D) — volume-weighted measure showing buying vs selling pressure.
+ Use: divergence with price signals potential reversal. Pros: volume + price combined. Cons: sensitive to price spikes. Rating: 4/5
+Cumulative Volume Delta (CVD) — cumulative difference between buying and selling volume (taker buys − taker sells).
+ Use: spot persistent buying/selling pressure; divergences matter. Pros: strong order-flow insight. Cons: needs tick/level-2 data for accuracy. Rating: 4/5
+Cumulative Volume Index — running total of volume with direction weighting.
+ Use: trend confirmation. Pros: simple cumulative view. Cons: lagging. Rating: 3.5/5
+Net Volume / Up-Down Volume / Volume delta — measures difference between up and down volume.
+ Use: confirm price direction; detect hidden weakness. Pros: easy to read. Cons: raw numbers need normalization. Rating: 3.5/5
+On-Balance Volume (OBV) — adds/subtracts volume to a running total based on up/down closes.
+ Use: look for OBV–price divergence. Pros: intuitive. Cons: ignores magnitude of price moves. Rating: 3.5/5
+Money Flow Index (MFI) — volume-weighted RSI (uses typical price × volume).
+ Use: overbought/oversold plus volume confirmation. Pros: couples price & volume. Cons: false signals in low-vol markets. Rating: 4/5
+Chaikin Money Flow (CMF) — measures accumulation/distribution over a lookback period.
+ Use: bullish/bearish money flow confirmation. Pros: responsive to recent flows. Cons: can whipsaw. Rating: 3.5/5
+Chaikin Oscillator — MACD applied to Accumulation/Distribution line.
+ Use: momentum shifts in money flow. Pros: early detection. Cons: same noise issues as MACD. Rating: 3.5/5
+Price Volume Trend (PVT) — cumulative indicator similar to OBV but scales by % price change.
+ Use: trend/volume confirmation. Pros: more sensitive than OBV. Cons: still lagging. Rating: 3.5/5
+Volume Weighted Average Price (VWAP) — average price weighted by volume (intraday anchor).
+ Use: intraday support/resistance; institutional benchmark. Pros: excellent for intraday entries. Cons: resets daily (unless anchored). Rating: 5/5 (intraday)
+VWAP Auto Anchored — VWAP anchored to significant events (range start, low, swing).
+ Use: dynamic support/resistance with anchor. Pros: very practical for entries. Cons: requires good anchor choice. Rating: 4.5/5
+Volume Weighted Moving Average (VWMA) — MA weighted by volume.
+ Use: filter trends using high-volume price action. Pros: emphasises price where most trades occurred. Cons: not commonly standardized. Rating: 3.5/5
+Time Weighted Average Price (TWAP) — average price weighted by time (not volume).
+ Use: execution benchmark; smoothing. Pros: simple smoothing. Cons: ignores volume. Rating: 2.5/5
+Volume Oscillator / Volume indicators — compare fast & slow volume MAs.
+ Use: detect volume surges relative to trend. Pros: highlights unusual activity. Cons: needs tuning. Rating: 3.5/5
+
+Breadth / market internals
+Advance-Decline Line (A/D line) — cumulative difference of advancing vs declining issues.
+ Use: confirm market breadth vs indices (divergences warn of weakness). Pros: strong market health signal. Cons: needs broad market dataset. Rating: 4.5/5
+Advance / Decline Ratio (and bars) — ratio of advancing to declining stocks (or bar version).
+ Use: short-term breadth extremes. Pros: quick breadth snapshot. Cons: noisy intraday. Rating: 3.5/5
+Advance-Decline Ratio (duplicate concept) — see above. Rating: 3.5/5
+
+Moving averages & smoothing
+Moving Average — Simple (SMA)
+ Use: smooth price, slower trend filter; crossovers for signals. Pros: easy to compute. Cons: lags and reacts slowly. Rating: 4/5
+Moving Average — Exponential (EMA)
+ Use: faster response than SMA for crossovers. Pros: more sensitive to recent price. Cons: more whipsaw in choppy markets. Rating: 4.5/5
+Moving Average — Weighted (WMA)
+ Use: heavier weight to recent prices. Pros: compromise between SMA & EMA. Cons: limited use compared to EMA. Rating: 3.5/5
+Smoothed Moving Average
+ Use: long-term smoothing with less noise. Pros: reduces whipsaw. Cons: very laggy. Rating: 3/5
+Triple EMA / Double EMS (DEMA?) — combinations to reduce lag (DEMA, TEMA).
+ Use: faster trend with reduced lag. Pros: better responsiveness. Cons: can amplify volatility. Rating: 3.5/5
+Hull Moving Average (HMA) — attempts low lag + smoothness using sqrt(length) weighting.
+ Use: trend detection with less lag. Pros: smooth + responsive. Cons: not standard; can repaint on live bars in some implementations. Rating: 4/5
+McGinley Dynamic — adaptive smoothing that follows price without lagging as much as MA.
+ Use: adaptive trend-following. Pros: less whipsaw. Cons: more complex. Rating: 3.5/5
+Arnaud Legoux Moving Average (ALMA) — smooth, low-lag MA using Gaussian weighting.
+ Use: better smoothing and fewer false crosses. Pros: visually clean. Cons: needs tuning of sigma/offset. Rating: 3.5/5
+Least Squares Moving Average (LSMA) — linear regression-based smoothing.
+ Use: detect underlying slope of price. Pros: statistical interpretation. Cons: can lag and require math. Rating: 3.5/5
+Linear Regression Channel / Median / Linear regression indicators
+ Use: channel lines and slope for trend & mean reversion. Pros: quantifiable support/resistance. Cons: sensitive to outliers. Rating: 3.5/5
+MA Cross — signals generated when fast MA crosses slow MA.
+ Use: classic trend entry/exit. Pros: easy systemization. Cons: lagging and false signals in range. Rating: 3.5/5
+Moving Average Ribbon — multiple MAs of different lengths stacked.
+ Use: visualize trend strength and squeezes. Pros: great visual context. Cons: complex trading rules. Rating: 3.5/5
+
+Momentum & oscillators
+Relative Strength Index (RSI) — momentum oscillator (0–100); overbought/oversold.
+ Use: divergence, overbought/oversold, centerline cross. Pros: widely used, versatile. Cons: can stay overbought/oversold during trends. Rating: 4.5/5
+Stochastic Oscillator — measures close vs range over lookback; %K/%D.
+ Use: overbought/oversold, divergence, crossovers. Pros: good for mean-reversion setups. Cons: choppy in trending markets. Rating: 4/5
+Stochastic RSI — RSI applied to RSI (very sensitive).
+ Use: find short-term extremes. Pros: very responsive. Cons: noisy; many false signals. Rating: 3/5
+MACD (Moving Average Convergence Divergence) — difference between two EMAs + signal line.
+ Use: momentum, bullish/bearish cross, histogram for momentum change. Pros: intuitive trend + momentum combo. Cons: lag in fast markets. Rating: 4.5/5
+Awesome Oscillator — difference between short & long SMAs of median price.
+ Use: histogram zero-cross and saucer/peak patterns. Pros: simple momentum read. Cons: limited by smoothing choice. Rating: 3.5/5
+Momentum / Rate of Change (ROC) — raw price changes over lookback.
+ Use: confirm trend strength and detect reversals. Pros: very direct. Cons: sensitive to lookback. Rating: 3.5/5
+TRIX — rate of change of a triple-smoothed EMA.
+ Use: filter noise and capture trend momentum. Pros: less choppy. Cons: very lagging. Rating: 3/5
+True Strength Index (TSI) — momentum using double smoothing of price changes.
+ Use: trend strength, divergence. Pros: smooth momentum measure. Cons: needs tuning. Rating: 3.5/5
+Ultimate Oscillator — multi-timeframe weighted momentum.
+ Use: divergence & confirmation across short/medium/long. Pros: reduces single-timeframe bias. Cons: complexity. Rating: 3.5/5
+Connors RSI — composite of short RSI + streak + ROC; designed for short-term mean reversion.
+ Use: high-probability pullback entries. Pros: good mean-reversion signal. Cons: tailored to very short trades. Rating: 3.5/5
+Commodity Channel Index (CCI) — deviation of price from its moving average (often used as oscillator).
+ Use: overbought/oversold and trend strength. Pros: wide range detection. Cons: scale not bounded (requires interpretation). Rating: 3.5/5
+Fisher Transform — converts price to Gaussian-like value for sharp turning signals.
+ Use: turning point detection. Pros: produces clear peaks & troughs. Cons: can give fast whipsaws. Rating: 3/5
+Williams Alligator — three smoothed MAs intended to show market sleeping/awakening cycles.
+ Use: trend identification and timing. Pros: visual, helps avoid trading in “sleep” phase. Cons: many parameters and lag. Rating: 3/5
+Stochastic Momentum Index (SMI) — refinement of stochastic to measure distance from median.
+ Use: clearer signals vs standard stochastic. Pros: smoother. Cons: still prone to choppy markets. Rating: 3/5
+Relative Vigor Index (RVI) — measures conviction of price movement using close vs open.
+ Use: confirm momentum direction with smoothing/centerline. Pros: complementary to RSI/MACD. Cons: not widely used; must be combined. Rating: 2.5/5
+Rate of Change (ROC) — see Momentum above. Rating: 3.5/5
+Know Sure Thing (KST) — multiple ROC sums with smoothing; long-term momentum indicator.
+ Use: multi-period momentum & big trend signals. Pros: captures multiple timeframes. Cons: lagging. Rating: 3/5
+RSI Divergence indicator — not a different indicator but algorithm to detect RSI–price divergence.
+ Use: highlight probable reversals. Pros: high-value signals when valid. Cons: divergence can persist. Rating: 4/5 (when used properly)
+
+Trend strength / direction
+Average Directional Index (ADX) / Directional Movement Index (DMI) — ADX measures trend strength; +DI/−DI show direction.
+ Use: ADX > ~25 signals strong trend; cross of DI lines indicates trend shift. Pros: separates trend strength from direction. Cons: lagging indicator. Rating: 4.5/5
+Parabolic SAR — trailing stop dots that flip when trend reverses.
+ Use: dynamic stop placement and reversal signal. Pros: simple exits. Cons: whipsaws in range. Rating: 3.5/5
+Ichimoku Cloud — multi-component system giving trend, support/resistance, momentum, and future cloud.
+ Use: cloud above/below price, Tenkan/Kijun cross for signals. Pros: all-in-one system. Cons: many pieces to learn; default settings may not fit all markets. Rating: 4/5
+Aroon — measures time since recent highs/lows to indicate trend emergence or consolidation.
+ Use: Aroon Up high and Aroon Down low = strong uptrend, vice versa. Pros: visual trend timing. Cons: noisy on small timeframes. Rating: 3.5/5
+Trend Strength Index / Vortex Indicator — various measures of trend vigor and directional flow.
+ Use: confirm if trend is reliable. Pros: add conviction to trend trades. Cons: many variants; choose one. Rating: 3/5
+Supertrend — ATR-based trend indicator giving clear buy/sell flips.
+ Use: trend following with ATR stop. Pros: very popular; works well in trending markets. Cons: can give late entries/exits. Rating: 4/5
+Visible Average Price — price level with highest traded volume visible on chart (like visible VWAP).
+ Use: identify local value and support/resistance. Pros: intuitive. Cons: only shows visible window. Rating: 3.5/5
+
+Volatility & channels
+Average True Range (ATR) — average of true ranges, volatility measure.
+ Use: position sizing, stop placement, detect increasing volatility. Pros: universal for stops. Cons: not directional. Rating: 5/5
+Bollinger Bands / %b / Bandwidth / Bollinger bars — bands at ±n standard deviations around MA.
+ Use: volatility squeeze (low bandwidth) → expansion, mean reversion at bands, breaks signal strong moves. Pros: versatile. Cons: bands expand and stay wide in trends (false reversion signals). Rating: 4.5/5
+Keltner Channels — ATR-based channel around EMA.
+ Use: trend vs squeeze detection; complement Bollinger. Pros: less sensitive to outliers. Cons: requires parameter tuning. Rating: 3.5/5
+Donchian Channels — high/low over n periods (breakout indicator).
+ Use: breakout system (Turtle strategy). Pros: simple breakout rules. Cons: false breakouts; whipsaw. Rating: 3.5/5
+Envelope — fixed % bands around MA.
+ Use: mean reversion/overbought detection. Pros: simple. Cons: fixed width may not adapt to volatility. Rating: 2.5/5
+Historical Volatility — statistical measure of price variance over lookback.
+ Use: option pricing, risk assessment. Pros: objective. Cons: backward-looking only. Rating: 3.5/5
+Mass Index — measures range expansion/contraction to spot reversals.
+ Use: reversal signal when Mass Index reaches threshold and then falls. Pros: different approach to reversals. Cons: niche and lagging. Rating: 2.5/5
+Choppiness Index / Chop Zone — measures whether market is trending or choppy.
+ Use: avoid trend strategies when market is choppy. Pros: improves strategy selection. Cons: threshold choice subjective. Rating: 3/5
+Average Day Range (ADR) — average daily high–low range.
+ Use: set intraday targets & stops. Pros: practical for intraday sizing. Cons: market regime shifts. Rating: 3.5/5
+Gaps — price gaps between sessions.
+ Use: gap fill strategies or momentum continuation. Pros: clear actionable events. Cons: gap behavior varies by market/time. Rating: 3.5/5
+
+Price structure, pivots & fibs
+Pivot Points — standard / high-low
+ Use: daily pivot support/resistance levels for intraday trading. Pros: widely watched levels. Cons: can be self-fulfilling and fade in strong trends. Rating: 4/5
+Auto Fibonacci Retracement / Auto Fibonacci Extension — auto-drawn fib levels between swing points.
+ Use: project support/resistance and targets. Pros: common target levels. Cons: depends on swing selection; many conflicting fibs. Rating: 3.5/5
+Auto Pitchfork / Auto Trendlines — automated drawing of Andrews’ Pitchfork or trendlines.
+ Use: trend channeling and expectations of mean reversion to median. Pros: automates chart work. Cons: automatic anchoring can be wrong; manual validation needed. Rating: 3/5
+Zig Zag — filters price moves below a threshold to show major swings.
+ Use: identify structure / swing points; derive fibs/pivots. Pros: declutters charts. Cons: repainting retrospective nature. Rating: 3.5/5
+Fractals (Williams Fractals) — local swing highs/lows marking pivots.
+ Use: identify discrete support/resistance and stop placement. Pros: easy to observe. Cons: repaint until bar closes. Rating: 3/5
+Price Oscillator / Price Target — price difference measures and target calculators.
+ Use: generate targets or divergence signals. Pros: flexible. Cons: reliability varies. Rating: 2.5–3.5/5 depending on method
+
+Statistical & correlation tools
+Correlation Coefficient — statistical correlation between two series.
+ Use: pair trading, risk diversification checks. Pros: objective measure. Cons: correlation changes over time. Rating: 4/5
+Rank Correlation Index (RCI) / RCI Ribbon — ranking-based momentum/correlation measure across time windows.
+ Use: momentum timing and relative strength on ranks. Pros: robust to outliers. Cons: niche; needs explanation. Rating: 2.5/5
+Linear regression channel & Least squares MA — see moving averages section. Rating: 3.5/5
+
+Breadth / seasonality / cycles / other
+Seasonality — historical patterns by time of year/day.
+ Use: overlay seasonal bias on strategies. Pros: can add probabilistic edge. Cons: subject to regime changes & sample bias. Rating: 3/5
+Moon Phases — esoteric cycle indicator (some traders prefer).
+ Use: rarely used; sometimes combined with seasonality. Pros: anecdotal edges for niche systems. Cons: no consistent statistical edge for most markets. Rating: 1.5/5
+
+Specialized & composite indicators
+Klinger Oscillator — compares volume flow to price using long & short EMAs.
+ Use: detect money flow confirmations and divergences. Pros: combines momentum & volume. Cons: complex to interpret. Rating: 3/5
+Elder Force Index — combines price change and volume to show force behind moves.
+ Use: confirm move strength and pullbacks. Pros: simple to compute. Cons: noisy on small frames. Rating: 3/5
+Balance of Power (BOP) — measures buying vs selling pressure per bar.
+ Use: confirm trend/turns. Pros: sensitive to intrabar dynamics. Cons: needs smoothing. Rating: 2.5/5
+Ease of Movement (EOM) — relates price change to volume for ease of move.
+ Use: identify low-effort moves (which often continue). Pros: unique perspective. Cons: niche. Rating: 2.5/5
+Envelope / Median / Performance — performance metrics or banding; used for comparisons. Rating: 2.5–3/5
+Klinger / Elder / Chande / Fisher etc. — many of these are variants on combining price, volume, and smoothing with different math. They’re useful in combination but rarely standalone 5/5 miracle. Typical rating across these: 3–3.5/5
+
+Option / derivatives / interest metrics
+Open Interest — number of outstanding derivative contracts.
+ Use: in options/futures, rising OI with rising price confirms trend; falling OI suggests liquidation. Pros: essential for derivatives traders. Cons: requires option chain context. Rating: 4/5
+
+Statistical/advanced seasonal or proprietary systems (Rob Booker, Ziv, etc.)
+Rob Booker indicators (Intraday pivot points, Knoxville divergence, Missed pivot points, Reversal, Ziv ghost pivots) — trader-specific algorithms and heuristics.
+ Use: follow the author’s rules for intraday entries and pivot detection. Pros: can work in the environment they were designed for. Cons: proprietary, less transparent, may not generalize; need backtesting. Rating: 2.5–3.5/5 (case-specific)
+Technical Ratings — composite scores produced by platforms (buy/hold/sell consensus).
+ Use: quick screening. Pros: saves time. Cons: black-box; different platforms disagree. Rating: 3/5
+
+Indicators used for mean-reversion vs trend-following
+Mean-reversion friendly: RSI, Stochastic, Bollinger Bands, Mean envelopes, Connors RSI.
+
+
+Trend-following friendly: ADX, Moving averages, MACD (trend mode), Supertrend, VWAP (intraday).
+ Use strategy matching: pick indicators aligned to your edge (mean reversion vs trend) to avoid contradictory signals.
+
+
+

@@ -1,0 +1,168 @@
+Strategies 
+1. Bar Up / Bar Down strategy
+ What: Trade based on directional single-bar or multi-bar patterns (strong bullish/bearish bars).
+ Entry (example): buy after a strong bullish bar (close > open and close > previous high) with volume spike; short after a strong bearish bar.
+ Exit/Risk: stop below bar low / use ATR multiple; target 1–2× risk.
+ Pros/Cons: simple and fast; vulnerable to fakeouts in choppy markets.
+ Timeframe: 1m–1H intraday or daily for swing.
+
+2. Bollinger Bands strategy
+ What: Uses bands around an MA to detect volatility, squeezes, and mean reversion.
+ Entry: mean-revert — buy when price touches lower band and RSI < 30; breakout — buy on close above upper band with volume surge.
+ Exit/Risk: stop beyond band or ATR-based; target mean/center MA or band opposite.
+ Pros/Cons: versatile (trend & mean reversion); false breakouts and band hugging in trends.
+ Timeframe: intraday to daily.
+
+3. Bollinger Bands — Directed (directional variant)
+ What: Uses band breaks but filters by trend direction (e.g., only long in uptrend).
+ Entry: buy only if price > MA and close above upper band; avoid counter-trend band bounces.
+ Exit/Risk: trailing stop (ATR) or MA cross.
+ Pros/Cons: reduces false mean-revert trades by aligning with trend; misses contrarian high-probability bounces.
+ Timeframe: 15m–daily.
+
+4. Channel Breakout strategy
+ What: Trade when price breaks a recent high/low channel (Donchian/price channel).
+ Entry: buy on close above channel high with increasing volume.
+ Exit/Risk: stop below breakout candle or channel mid; use breakout retest rules.
+ Pros/Cons: captures big moves; many false breakouts — needs filters.
+ Timeframe: intraday to daily swings.
+
+5. Conservative Up/Down strategy
+ What: Only take high-probability directional moves with strict filters (trend + momentum + volume).
+ Entry: e.g., buy when above long MA, ADX>25, RSI rising above 50.
+ Exit/Risk: tight stops, small position sizing, target conservative reward/risk.
+ Pros/Cons: lowers drawdowns; fewer trades and slower gains.
+ Timeframe: any (prefers higher TF for quality).
+
+6. Greedy strategy
+ What: Aggressive entries aiming to capture large moves (often partial scaling out).
+ Entry: buy breakouts without heavy filtering or add on pullbacks aggressively.
+ Exit/Risk: wider stops, scale out at multiple targets.
+ Pros/Cons: can maximize winners but increases drawdown & risk of big losses.
+ Timeframe: intraday to swing.
+
+7. Inside Bar strategy
+ What: Uses an inside bar (price range inside prior bar) as a compression/reversal or breakout signal.
+ Entry: buy on breakout above mother bar high with confirmation; short on break below low.
+ Exit/Risk: stop inside mother bar; target 1–3× ATR.
+ Pros/Cons: low-risk entries (small stops); false breakouts common — use volume/filters.
+ Timeframe: intraday to daily.
+
+8. Keltner Channels strategy
+ What: ATR-based channels around an EMA used for trend and breakout signals.
+ Entry: buy on close above upper channel withADX>20 or trend filter. Mean-revert: fade touches near channel edges if trend weak.
+ Exit/Risk: ATR-based stop; target channel mid or fixed R:R.
+ Pros/Cons: smoother than Bollinger; less sensitive to volatility spikes.
+ Timeframe: intraday to daily.
+
+9. MACD strategy
+ What: Uses MACD line, signal line, and histogram for momentum and crossovers.
+ Entry: bullish when MACD crosses above signal and histogram turns positive; confirm with price above short MA.
+ Exit/Risk: exit on cross back or divergence; use stop under recent swing.
+ Pros/Cons: good trend-momentum combo; lagging in fast markets.
+ Timeframe: 1H–daily usually.
+
+10. Momentum strategy
+ What: Trade in direction of strong price momentum (ROC, momentum oscillator, or filter like RSI > 60).
+ Entry: buy after a momentum surge + volume, possibly on retrace to a dynamic level (VWAP/MA).
+ Exit/Risk: ride until momentum weakens or use trailing ATR stop.
+ Pros/Cons: captures strong moves; vulnerable to sudden reversals.
+ Timeframe: short to medium term.
+
+11. Moving Avg 2-line cross (Two MA cross)
+ What: Classic system: fast MA crossing slow MA triggers trades.
+ Entry: buy when fast MA crosses above slow MA; short on cross down. Add volume/ADX filter.
+ Exit/Risk: reverse on cross back; stops via ATR or swing low.
+ Pros/Cons: simple and mechanical; many whipsaws in ranges.
+ Timeframe: adaptable (use shorter periods intraday, longer for swing).
+
+12. Moving Avg cross (variant / typo “Avf”)
+ What: Same concept but can include EMA/SMA/McGinley combos or multi-timeframe confirmation.
+ Entry/Exit/Risk: similar to above; use higher TF trend filter to reduce noise.
+ Pros/Cons: flexible; parameter sensitivity matters.
+ Timeframe: multi-timeframe best.
+
+13. Outside Bar strategy
+ What: Outside bar = a bar whose range engulfs previous bar(s). It signals increased volatility and possible continuation/reversal.
+ Entry: trade breakout of the outside bar in direction of momentum with a volume filter. Alternatively, fade if outside bar is exhaustion.
+ Exit/Risk: stop inside the outside bar; target multiple ATRs.
+ Pros/Cons: powerful setups; ambiguous direction — require context.
+ Timeframe: intraday to daily.
+
+14. Parabolic SAR strategy
+ What: Uses SAR dots as trailing stop flip signals to enter/exit trends.
+ Entry: buy when SAR flips below price; short when SAR flips above.
+ Exit/Risk: SAR itself provides trailing stop; combine with trend filter to avoid whipsaw.
+ Pros/Cons: excellent for trailing exits; whipsaws in ranges.
+ Timeframe: trending markets (1H–daily).
+
+15. Pivot Extension strategy
+ What: Use daily/weekly pivot levels and extend them to project targets/resistance/support for entries/exits.
+ Entry: trade bounces off pivot S/R or break of pivot with volume confirmation.
+ Exit/Risk: stop beyond pivot zone; use pivot-based targets.
+ Pros/Cons: widely watched, useful intraday; can be ignored in strong trending moves.
+ Timeframe: intraday/daily.
+
+16. Price Channel strategy
+ What: Similar to breakout: trade within or breakout of price channel (e.g., rolling highest-high/lowest-low).
+ Entry: buy on upper break for breakout; sell near upper in range for fade.
+ Exit/Risk: stop inside channel; target channel width multiples.
+ Pros/Cons: simple rules; false breakouts if not filtered.
+ Timeframe: intraday — Turtles use daily channels.
+
+17. Rob Booker — ADX breakout (proprietary)
+ What: Rob Booker’s rules combine ADX and price pivots for breakout timing (proprietary trader system).
+ Entry: buy if ADX indicates trend and price breaks pivot/support with confirmation.
+ Exit/Risk: follow the specific author’s stops or ATR-based.
+ Pros/Cons: can be effective in author's markets; requires study & backtesting for your instruments.
+ Timeframe: often intraday/scalp setups.
+
+18. RSI strategy
+ What: Uses RSI for overbought/oversold, divergence, and momentum confirmation.
+ Entry: mean-revert when RSI < 30 + price support; trend-follow when RSI crosses above 50 in uptrend.
+ Exit/Risk: exit on RSI reversion or predefined R:R; use price structure.
+ Pros/Cons: versatile; can stay overbought/oversold during strong trends.
+ Timeframe: adjustable (Connors RSI for short-term).
+
+19. Stochastic Slow strategy
+ What: Standard Stochastic (%K/%D slow) for overbought/oversold and cross signals.
+ Entry: buy when %K crosses above %D in oversold zone (<20) + trend confirmation.
+ Exit/Risk: exit on opposite cross or target; can be choppy in trending markets.
+ Pros/Cons: good for mean reversion; noisy in trends.
+ Timeframe: short-term to swing.
+
+20. Supertrend strategy
+ What: ATR-based band that flips trend state; buy when price above Supertrend and vice versa.
+ Entry: buy on candle close above Supertrend; combine with volume/ADX for confirmation.
+ Exit/Risk: Supertrend provides stop; trailing on ATR recommended.
+ Pros/Cons: clean signals in trends; late entry/exit in volatile breakouts.
+ Timeframe: intraday to daily.
+
+21. Technical Rating strategy
+ What: Composite score from multiple indicators (MA, RSI, MACD, volume) aggregated into buy/hold/sell.
+ Entry: take trade when composite score exceeds threshold (e.g., >70% buy).
+ Exit/Risk: reverse or exit when score drops below threshold; raisable to portfolio-level signals.
+ Pros/Cons: reduces single-indicator bias; black-box risk if weights not justified.
+ Timeframe: any — great for screening.
+
+22. Volty (Volatility) Expansion Close strategy
+ What: Trade on a volatility-expansion candle close (big range candle compared to recent ATR) often signaling directional initiation.
+ Entry: buy on close of volatility-expansion bullish candle with volume confirmation. Short with bearish candle.
+ Exit/Risk: stop under candle low/high; target multiples of ATR or next structure.
+ Pros/Cons: catches big moves early; false expansions can be liquidity grabs.
+ Timeframe: intraday & daily.
+
+23. Pivot Extension strategy (duplicate — if meant as variation)
+ What: Use extended pivot targets and confluence (Fibs, VWAP). Trade breakout/retest of pivot extensions.
+ (See 15.)
+ Pros/Cons/timeframe: same as Pivot strategy.
+
+24. Conservative variant & duplicates (e.g., “Supertrend strategy” appears twice)
+ Note: duplicates indicate emphasis—conservative vs aggressive parameter sets matter. For a conservative Supertrend, use larger ATR multiplier and higher timeframe; for aggressive, tighten ATR and use smaller TF.
+
+-.-.-..-...--Cross-cutting practical notes-.-.-..-...--
+Filter combos: Pair a trend filter (ADX, MA slope, VWAP) with a momentum/volume trigger to reduce false signals.
+Stops & sizing: Use ATR-based stops for instrument adaptivity; size positions by risk % of capital.
+Backtest: Any strategy ∼must∼ be backtested on the instrument/timeframe and walk-forward tested to avoid curve-fitting.
+Multi-timeframe: Prefer confirming higher-timeframe trend (e.g., daily) before taking lower-timeframe signals (e.g., 15m) for intraday trades.
+Performance metrics to track: Win rate, average win/loss, max drawdown, expectancy, and Sharpe-like ratio.

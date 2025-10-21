@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finbot"
+version = "0.1.0"
+description = "A modular trading and backtesting framework."
+authors = [
+    { name = "Mohit", email = "mohit@example.com" }
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "PyYAML",
+    "requests",
+    "scipy",
+    "loguru",
+    "kiteconnect",
+    "matplotlib",
+    "plotly",
+    "pytest",
+    "yfinance",
+    "flask"
+]
+
+
+
+[tool.setuptools.packages.find]
+include = ["backend*"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--disable-warnings"
+]

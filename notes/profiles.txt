@@ -1,0 +1,62 @@
+1) Time-Price Opportunity (TPO) / Market Profile
+What it is: A time-based profile that groups price into letters/blocks for each time slice (e.g., 30-min). It shows where price spent most time (time-value), not just traded volume.
+ How to use: identify Point of Control (POC = most TPOs), Value Area (typically 70% TPO), single-print areas (short covering/initiating moves). Long when price returns to value area low and shows acceptance above POC in an uptrend; fade single-print rejection with tight stops.
+ Pros: excellent for structure (where market liked to be); identifies auction behaviour and acceptance/rejection.
+ Cons: ignores trade size (time ≠ volume); needs interpretation and session context; slower on very fast markets.
+ Rating: 4.5/5 (great for institutional-style context)
+
+2) Session Time-Price Opportunity (Session TPO)
+What it is: TPO calculated for a single session (e.g., NY session) rather than multi-day.
+ How to use: compare session POCs across sessions, spot session-level acceptance/rejection, and intraday value shifts. Useful for session-based strategies (e.g., london→ny transition).
+ Pros: clean intraday context; highlights which sessions set the agenda.
+ Cons: limited to session scope; needs multi-session comparison for bigger context.
+ Rating: 4/5
+
+3) Auto-Anchored Volume Profile
+What it is: A volume-by-price profile automatically anchored to a significant event (swing low/high, session start, news time) chosen by the platform’s algorithm.
+ How to use: trade off the auto-found VPOC/value area as dynamic support/resistance; when price re-tests the VPOC after a breakout, watch for acceptance (trend continuation) or rejection (fakeout).
+ Pros: convenience — fast context without manual anchor; good for catching structural nodes.
+ Cons: anchor detection can be wrong or inconsistent across symbols/timeframes; less control for rigorous backtests.
+ Rating: 3.5/5 (handy, but verify anchors)
+
+4) Fixed-Range Volume Profile
+What it is: Volume profile built between two user-selected points (dates/times or bars).
+ How to use: analyze volume distribution for a specific move (e.g., consolidation to breakout). Use VPOC and high/low volume nodes as targets / stops. Good for pre/post earnings ranges or trade setups.
+ Pros: precise, reproducible, excellent for backtesting and forensic trade analysis.
+ Cons: requires correct range selection — garbage in, garbage out.
+ Rating: 4.5/5 (very powerful if you choose ranges deliberately)
+
+5) Period Volume Profile
+What it is: Volume profile aggregated for fixed uniform periods (day, week, month, custom N-bars).
+ How to use: use daily/weekly period profiles to see session vs longer-term value — e.g., weekly VPOC as a stronger S/R than daily. Combine periods for multi-TF confluence.
+ Pros: systematic and comparable across instruments; good multi-TF support.
+ Cons: must choose period length to match strategy; longer periods dilute short-term signals.
+ Rating: 4/5
+
+6) Session Volume Profile
+What it is: Volume profile computed for predefined trading sessions (e.g., Asian, London, NY) or exchange session (regular trading hours).
+ How to use: see which session created big volume nodes; trade session-specific POC re-tests or breakout continuation into next session. Useful for session overlap setups.
+ Pros: isolates session liquidity providers and participants.
+ Cons: misses volume outside the chosen session; less useful for 24/7 markets unless sessions are well-defined.
+ Rating: 4/5 (for session-sensitive strategies)
+
+7) Session Volume Profile HD (High-Definition)
+What it is: Same as session profile but with finer price binning / higher sampling resolution (more bins, tick-level if available).
+ How to use: use for precise micro-price levels (scalp entries, tight institutional levels). Look for micro VPOCs and fine high/low volume nodes.
+ Pros: more granular S/R; better for scalping or limit order placement.
+ Cons: more noise, risk of overfitting to tiny nodes, heavier computational needs.
+ Rating: 3.5/5 (best for scalpers who know what they want)
+
+8) Visible Range Volume Profile
+What it is: Volume profile calculated for whatever price/time range is currently visible on your chart (dynamic with zoom/pan).
+ How to use: quickly find currently relevant VPOC/value area and H/V volume nodes for the visible timeframe; use as tactical S/R for active charts.
+ Pros: extremely convenient and contextually relevant; automatically adapts as you zoom into structure.
+ Cons: results change with chart view (not fixed), which can confuse rules-based systems and backtests.
+ Rating: 4/5 (very useful for discretionary trading; be careful for mechanical systems)
+
+How TPO (time) and Volume Profile (volume) differ — and why both matter
+TPO (Market Profile) = time at price. Shows where market spent time (auction theory: acceptance vs rejection).
+
+
+Volume Profile = volume at price. Shows where actual trade size was concentrated.
+ Use together: Confluence of TPO POC and Volume POC is a high-value node. A TPO single-print with low volume node often equals thin liquidity (fast moves). A high-volume node inside a TPO value area = strong support/resistance. Combine both to separate display noise from real liquidity.

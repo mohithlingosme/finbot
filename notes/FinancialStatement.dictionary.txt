@@ -1,0 +1,270 @@
+Financial 
+Income statement 
+Total revenue 
+Cost of goods sold 
+Deprecatopm amd amprtization
+Depreciation 
+amotization of intangibles 
+Amortization of deferred charges 
+Other cost of goods sold 
+Gross profit 
+Operating expenses (Excl , COSG) 
+Selling - general - admin expenses , total 
+Research & development
+Selling / general / admin expenses , other 
+Other operating expenses, total 
+Operating income 
+Non - operating income, total 
+Interest expense , net of interest capitalized 
+Interest expene on debt 
+Interest capitalized 
+Non - operating income , excl . interest expenses
+Non operating interest income 
+Pretax equity in earnings 
+Miscellaneous non operating expense 
+Unusual income / expense 
+Impairments 
+Restructuring charge 
+Legal claim expense 
+Unrealized gain / loss 
+Other exceptional charges 
+Pretax income 
+Equity in earnings 
+Taxes 
+Income tax, current 
+Income tac, current - domestic 
+Income tax, current - foreign 
+Income ax, deferred 
+Income tax, deferred - domestic 
+Income tac, deferred - foreign 
+Income tax credits 
+Non - controlings . minority interest 
+After tax other income / expense 
+Net income before discontinued operation 
+Dicontinud operations
+Net income 
+Dilution adjustment 
+Preferred dividends 
+Diluted net income available to common stockholders 
+Basic earning per share (basic EPS)
+Diluted earning per share (Diluted EPS)
+Average basic shares outstanding 
+Diluted shares outstanding 
+EBUTDA 
+EBIT 
+Total operating expenses 
+Balance sheet 
+Accounts receivables, gross 
+Dab debt / doubtful accounts 
+Other receivables 
+Total inveotyr 
+Inventories - work in progress 
+Inveotories - progress payment & other 
+Inveotories - finished goods 
+Inveotories - raw meterials 
+Prepaid expenses 
+Other current assets, total 
+Total no-current assets, total 
+Long term investments 
+Note receivable - long terms 
+Investments in unconsoldated subsidiaries 
+Other investments
+Net property / plant / equipment 
+Gross property / plant / equipment - buildings 
+Property / plant / equipment - construction in progress 
+Property / plant / equipment - machinery & equipment 
+Property / plant / equipment - land & improvement
+Property / plant / equipment - leased property
+Property / plant / equipment - leases 
+Property / plant / equipment - computer software andequipment 
+Property / plant / equipment -  transportation equipment 
+Property / plant / equipment - other 
+Accumulated depreciation, total 
+Accumulated depreciation, buildings 
+Accumulated depreciation - construction in progress 
+Accumulated depreciation - machinery & equipment 
+Accumulated depreciation - land & improvement 
+Accumulated depreciation - leased property 
+Accumulated depreciation - leases 
+Accumulated depreciation - computer software and equipment 
+Accumulated depreciation - transportation equipment 
+Accumulated depreciation - others 
+Deferred rax assets 
+Net intangible assets 
+Goodwill, net 
+Goodwill gorss 
+Accumulated goodwill amortization 
+Other intangibles, net 
+Other intangibles, gross
+Accumulated amortization of other intangibles 
+Deferred charges 
+Other long term assets, total 
+Total liabilities 
+Total current liabilities 
+Short term debt 
+Current portion of LT debt and capital leases 
+Short term debt excl, current portion LT debt 
+Notes payables 
+Other short term debt 
+Accounts payable 
+Incomes tax payable 
+Dividends payable accured 
+Accrued payroll 
+Deferred income, current 
+Other current liabilities 
+Total non current liabilities 
+Long term debt 
+Long term debt excl, lease liabilities 
+Capital and operating lease obligation 
+Capitalized lease obligations 
+Operating lease liabilities 
+Provision for risk & charge 
+Deferred tax liabilities 
+Deferred income, non-current 
+Other non-current liabilities, total 
+Total equity 
+Shareholder’s equity 
+Common equity, total 
+Retained earnings 
+Paid in capital 
+Common stock par/carrying value 
+Additional paid in capital/capital surplus
+Treasury stock - common 
+Other common equity 
+Preferred stock, carrying value 
+Minority interest 
+Total liabilities & shareholders equities 
+Total debt 
+Net debt 
+Cash flow 
+Cash from operating activities 
+Funds from operations 
+Net income (cash flow) 
+Depreciation & amortization (cash flow) 
+Depreciation / depletion 
+Non cash items 
+Changes in working capital
+Change in accounts receivable 
+Changes in taxes payable 
+Changes in accrued expenses 
+Change in inventories 
+Change in other assets/liabilities 
+Cash from investing activities 
+Purchase / sale of business, net 
+Sale of fixed assets & businesses 
+Purchase / acquisition of business 
+Purchase / sale of investments, net 
+Sale / maturity of investments 
+Prichase of investments 
+Capital expenditures 
+Capital expenditures - fixed assets 
+Capital expenditures - other assets 
+Other investing cash flow items, total 
+Investing activities -other sources 
+Investing activities - other uses 
+Cash from financing activities 
+Insurance / retirement of stock, net 
+Sale of common & preferred stock 
+Repurchase of common & preferred stock 
+Issuance / retirement of debt, net 
+Issuance / retirement of long terms ebt 
+Issuance of long term debt 
+Reduction of long term debt 
+Issuance / retirement of short term debt 
+Issuance / retirement of other debt 
+Total cash dividends paid 
+Preferred dividends paid 
+Other financing cash flow items, total 
+Financing activities - other sources 
+Financing activities - other uses 
+Free cash flow 
+Statistics 
+Market capitalization 
+Total common shars outstanding 
+Free float
+Number of employees 
+Dividends per share - common stock primary issue 
+Dividend yield %
+Dividend payout ration %
+Price to earning ratio 
+Price to sales ratio
+Price to cash low ratio
+Price to book ratio 
+Enterprise value to EBITDA ratio 
+Enterprise value to EBIT ratio
+Enterprise value to revenue ratio
+Price earnings ratio forward 
+Price sales ratio forward
+Price to free cash flow ratio
+Price to tangible book ratio
+Price / earnings to growth ratio
+Return on assets %
+Return on equity %
+Return on common equity %
+Return on invested capital %
+Gross margin %
+Operating margin %
+EBITDA margin %
+Net margin %
+Return on equity adjusted to book value %
+Return on tangible assets %
+Return on tangible equity %
+Free cash flow margin %
+Quick ratio 
+Current ratio 
+Inventory turnover 
+Asset turnover 
+Debt to assets ratio 
+Debt to equity ratio 
+Long term debt to total assets ratio 
+Long term debt to total equity ratio 
+Debt to EBITDA ratio 
+Debt to revenue ratio 
+Free cash flow per share 
+Book value per share 
+Et current asset value per share 
+Tangible book value per share 
+Effective interest rate on debt %
+Equity to assets ratio 
+Goodwill to asets ratio 
+Interest coverage 
+Inventory to revenue ratio 
+Shares buyback ratio %
+Sloan ratio %
+EPS estimates 
+Revenu estimates
+Revenue on year growth %
+EPS basic one year growth %
+EPS diluted one year  growth %
+Accruals 
+Tangible common equity ratio 
+Revenue per employee 
+Net income per employee 
+Free chas flow per employee
+EBITDA per employee 
+Operation income per employee 
+Total debt per employee 
+Total assets per employee 
+Research & development per employee 
+Graham’s number 
+Quality ratio 
+Gross profit to assets ratio 
+Buyback yield 
+Cash conversion cycle 
+Altman Z-score 
+Piotroski F score 
+Sustainable growth rate % 
+Research & development to revenue ratio %
+Earning yield %
+Operating earnings yield %
+Tobin’s Q (approximate)
+Beneish M-score 
+KZ index 
+Fulmer H factor 
+Springate score 
+Zmijewski score 
+Cash to debt ratio 
+COGS to revenue ratio 
+Days inventory 
+Days payable days sales outstanding 
+

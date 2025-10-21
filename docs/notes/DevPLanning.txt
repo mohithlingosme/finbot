@@ -1,0 +1,8 @@
+this ia program which uses the various typpes of the a Signal for the a trading in the equity market 
+THe a signaal arises form the trading a below mentioned strategy 
+> the application uses strategies as mentioned <a>C:\Users\mohit\Desktop\finbot\strategies.txt
+> THe application uses indicator as mentioned C:\Users\mohit\Desktop\finbot\indicator.txt
+> The application uses Pattern as mentioned C:\Users\mohit\Desktop\finbot\Pattern.txt
+> The application uses profileing technniques as mentioned in C:\Users\mohit\Desktop\finbot\Pattern.txt
+> the a applicationn uses the financial report form the a comapany's financial report which we will fetch from the enetities Web site using a beautiful soup
+refer and store data from 2002 and use to analysis various other patterns for developinng new strategies by using Machine learning algorithm 

@@ -1,0 +1,352 @@
+Chart / price-structure patterns
+Bullish flag
+ What: sharp run-up (flagpole) followed by a small downward-sloping channel (flag).
+ Entry/Stop/Target: enter on breakout above flag; stop below flag low; target ≈ flagpole height.
+ Pro / Con: high-prob continuation pattern after strong move; can fail on low volume. Rating: 4/5
+
+
+Bearish flag
+ What: mirror of bullish flag after a sharp drop.
+ Entry/Stop/Target: short on breakout below flag; stop above flag high; target ≈ pole length.
+ Pro / Con: good momentum continuation; false breakdowns on low liquidity. Rating: 4/5
+
+
+Bollinger bands strategy (pattern → you likely mean using band squeezes/breakouts)
+ What: price compresses into narrow bands (squeeze) then expands.
+ Entry/Stop/Target: trade expansion direction on breakout with volume confirmation; stop inside squeeze; target at band multiples or mean.
+ Pro / Con: useful for volatility breakouts; can false-break during whipsaw. Rating: 4/5 (strategy-dependent)
+
+
+Bollinger bands — directed (trend-aligned variant)
+ What: only take band breakouts in the direction of the higher-timeframe trend.
+ Entry/Stop/Target: breakout + HTF trend confirmation; stop inside band; target multiple ATRs.
+ Pro / Con: reduces false signals but misses counter-trend edges. Rating: 4/5
+
+
+Channel breakout strategy / Price channel strategy / Price Channel
+ What: price breaks above/below recent high–low channel (Donchian-like).
+ Entry/Stop/Target: enter on breakout (optionally on retest); stop inside channel; target = channel width or trend projection.
+ Pro / Con: captures big moves; many false breakouts — needs filters. Rating: 4/5
+
+
+Conservative up/down strategy (conceptual)
+ What: strict multi-filter approach (trend + momentum + volume) only high-quality signals.
+ Entry/Stop/Target: small positions, tight stops, high confirmation.
+ Pro / Con: low drawdown; fewer trades and slower growth. Rating: 4/5
+
+
+Greedy strategy (conceptual)
+ What: aggressive sizing/entries, often pyramiding into moves.
+ Entry/Stop/Target: large positions, looser stops.
+ Pro / Con: large upside but higher risk of catastrophic drawdown. Rating: 2.5/5 (risk-heavy)
+
+
+Inside bar strategy
+ What: a bar whose high/low is inside previous (mother) bar — compression before breakout.
+ Entry/Stop/Target: entry on breakout beyond mother bar; stop inside mother bar; target 1–3× ATR.
+ Pro / Con: compact risk; directional ambiguity requires filter. Rating: 3.5/5
+
+
+Keltner channels strategy
+ What: ATR-based channel around an EMA used for trend/break filter.
+ Entry/Stop/Target: breakout above channel for trend; stop below channel; target ATR multiples.
+ Pro / Con: smoother than Bollinger; good for trend-following. Rating: 3.5/5
+
+
+MACD strategy
+ What: use MACD line / signal cross + histogram momentum for entries.
+ Entry/Stop/Target: enter on bullish cross confirmed by price action; stop under recent swing; target based on trend.
+ Pro / Con: good trend/momentum combo; lagging. Rating: 4/5
+
+
+Momentum strategy
+ What: ride strong momentum (ROC, RSI slope, volume surge).
+ Entry/Stop/Target: enter on momentum surge + pullback to support; trailing ATR stop.
+ Pro / Con: captures extended moves but vulnerable to abrupt reversals. Rating: 4/5
+
+
+Moving Avg 2-line cross / Moving Avg cross
+ What: fast MA crossing slow MA triggers trend signal.
+ Entry/Stop/Target: enter on crossover with optional volume/DMI filter; stop under swing.
+ Pro / Con: simple; many whipsaws in range-bound markets. Rating: 3.5/5
+
+
+Outside bar strategy
+ What: a bar that engulfs previous bar(s) — signals expansion.
+ Entry/Stop/Target: trade breakout of the outside bar in the momentum direction; stop inside bar; target multiple ATRs.
+ Pro / Con: strong potential but directional ambiguity can mislead. Rating: 3.5/5
+
+
+Parabolic SAR strategy
+ What: uses SAR dot flips as entry/exit/trailing stop.
+ Entry/Stop/Target: enter when SAR flips below price (long); SAR acts as trailing stop.
+ Pro / Con: good trailing exits; whipsaws in choppy market. Rating: 3.5/5
+
+
+Pivot extension strategy / Pivot Points
+ What: trade bounces/breaks of daily/weekly pivot levels and extensions.
+ Entry/Stop/Target: fade/ride off pivots with stop beyond pivot; targets at next pivot/ext.
+ Pro / Con: widely watched levels (self-fulfilling); can be ignored in strong trends. Rating: 4/5
+
+
+Rob Booker — ADX breakout (proprietary-style)
+ What: uses ADX to confirm breakout momentum per Rob Booker rules.
+ Entry/Stop/Target: only take breakouts when ADX>threshold; stops per author rules or ATR.
+ Pro / Con: solid filter for strength; proprietary rules need study/backtest. Rating: 3–4/5 (case-specific)
+
+
+RSI strategy
+ What: use RSI for mean-reversion or trend-confirmation (e.g., cross >50).
+ Entry/Stop/Target: mean-revert at extremes (30/70) or trend entries when RSI supports price.
+ Pro / Con: versatile; stays extreme in strong trends (false signals). Rating: 4/5
+
+
+Stochastic slow strategy
+ What: slow %K/%D stochastic for overbought/oversold cross signals.
+ Entry/Stop/Target: buy when %K crosses %D from oversold with trend filter; stop under swing.
+ Pro / Con: great for range trading; noisy in trends. Rating: 3.5/5
+
+
+Supertrend strategy
+ What: ATR-based band that flips to indicate trend; used for entries and trailing stops.
+ Entry/Stop/Target: buy when price closes above Supertrend; use that as stop.
+ Pro / Con: clean signals in trends; late during fast moves. Rating: 4/5
+
+
+Technical rating strategy
+ What: composite score (MA, RSI, MACD, volume) aggregated into buy/hold/sell.
+ Entry/Stop/Target: trade when score crosses thresholds; exit when score reverses.
+ Pro / Con: reduces single-indicator bias; model risk if weights wrong. Rating: 3.5/5
+
+
+Volty expansion close strategy (Volatility expansion close)
+ What: trade on a large-range candle close that expands volatility beyond recent ATR.
+ Entry/Stop/Target: enter in candle direction on close + volume; stop under candle; target ATR multiples.
+ Pro / Con: catches strong initiations; can be liquidity-grab traps. Rating: 4/5
+
+
+Channel / Rectangle / Range (Rectangle chart pattern)
+ What: horizontal consolidation between support & resistance (box).
+ Entry/Stop/Target: buy at support / short at resistance or trade breakout; stop beyond box edge.
+ Pro / Con: reliable if levels are tested often; false breakouts during news. Rating: 3.5/5
+
+
+Pennant — Bullish / Bearish
+ What: small symmetrical triangle after strong move (like flag but triangular).
+ Entry/Stop/Target: breakout continuation in pole direction; stop inside pennant; target ≈ pole height.
+ Pro / Con: high reward-to-risk if confirmed; false breakouts in low-volume. Rating: 3.5/5
+
+
+Cup and Handle (bullish) / Inverted Cup and Handle (bearish)
+ What: large rounded base (cup) with a small consolidation (handle) before breakout.
+ Entry/Stop/Target: buy on breakout above handle high; stop below handle low; target measured from cup depth.
+ Pro / Con: strong longer-term continuation pattern but slow to form and rare. Rating: 4/5
+
+
+Double top / Double bottom (Double button → bottom)
+ What: two peaks (or two troughs) at similar levels indicating potential reversal.
+ Entry/Stop/Target: short on break below the neckline (between peaks); stop above recent high; target measured from peak-to-neckline.
+ Pro / Con: classic reversal; may give head-fake before confirmation. Rating: 4/5
+
+
+Triple top / Triple bottom (Tripe button → triple bottom)
+ What: three touches of a level; stronger reversal signal when broken.
+ Entry/Stop/Target: enter on neckline break with volume confirmation; stop above peaks; target = measured move.
+ Pro / Con: more reliable than double but rarer. Rating: 4/5
+
+
+Head and Shoulders (and inverse)
+ What: left shoulder, head (higher peak), right shoulder; neckline break signals reversal.
+ Entry/Stop/Target: enter on neckline break; stop above right shoulder; target ≈ head-to-neck distance.
+ Pro / Con: highly reliable reversal when valid; false breaks can occur in volatile markets. Rating: 4.5/5
+
+
+Elliott Wave
+ What: fractal wave count theory — impulsive 5-wave moves and corrective 3-wave structures.
+ Entry/Stop/Target: use wave counts + Fibonacci projections to time entries/targets; complexity requires skill.
+ Pro / Con: powerful for multi-TF structure and targets, but subjective and requires practice. Rating: 3.5/5 (skill-dependent)
+
+
+Triangle patterns (likely “Triage” = Triangle) — Ascending / Descending / Symmetrical
+ What: converging trendlines; breakout signals direction.
+ Entry/Stop/Target: enter on breakout beyond trendline with retest; stop inside triangle; target measured by base width.
+ Pro / Con: good breakout pattern; often gives continuation or reversal depending on bias. Rating: 3.5/5
+
+
+Rising wedge / Falling wedge
+ What: converging slopes where rising wedge is bearish reversal, falling wedge is bullish reversal/continuation depending on context.
+ Entry/Stop/Target: short on breakdown of rising wedge; buy on breakout of falling wedge; stop inside wedge; target = wedge height.
+ Pro / Con: strong reversal pattern especially when formed after trend exhaustion. Rating: 4/5
+
+
+Rectangle / Range (already covered) — used for both breakout and mean-reversion plays. Rating: 3.5/5
+
+
+Triage / Triple button / Triple pattern duplicates — assumed corrected above.
+
+
+
+Candlestick patterns (single/multi-bar)
+I’ll list each candlestick pattern you named; short definition, trade idea, pro/con, rating.
+Doji
+ What: open ≈ close — indecision.
+ Entry/Stop/Target: context-dependent — in trend can signal pause/reversal if supported by volume; stop beyond next swing.
+ Pro / Con: ambiguous alone; high value when at key structure. Rating: 3/5
+
+
+Dragonfly Doji — bullish (contextual)
+ What: long lower shadow, open≈close at high of bar — rejection of lower prices.
+ Entry/Stop/Target: bullish reversal when at support or after downtrend; stop under shadow.
+ Pro / Con: strong rejection signal but needs volume/confirmation. Rating: 3.5/5
+
+
+Gravestone Doji — bearish
+ What: long upper shadow, open≈close at low — rejection of higher prices.
+ Entry/Stop/Target: bearish reversal after uptrend; stop above shadow.
+ Pro / Con: mirror of dragonfly; needs context. Rating: 3.5/5
+
+
+Abandoned Baby — bearish / bullish
+ What: 3-bar pattern: gap + doji isolated by gaps — powerful reversal.
+ Entry/Stop/Target: trade on confirmation with tight stop; high reward if validated.
+ Pro / Con: rare and strong when valid; gaps required (less common intraday). Rating: 4/5
+
+
+Dark Cloud Cover — bearish
+ What: strong up bar followed by down bar that closes into previous bar’s body (but not fully engulf).
+ Entry/Stop/Target: bearish reversal if on high and with volume; stop above high.
+ Pro / Con: good early reversal sign; weaker than full engulfing. Rating: 3/5
+
+
+Engulfing — bullish / bearish
+ What: second candle fully engulfs previous candle’s body (bullish engulfs down bar, bearish engulfs up bar).
+ Entry/Stop/Target: strong reversal if occurs at structure; stop beyond engulfing candle.
+ Pro / Con: clear supply/demand shift; good risk-reward on confirmation. Rating: 4/5
+
+
+Evening Star / Evening Doji Star — bearish
+ What: 3-bar top reversal: big up bar, small indecision (star), then big down bar.
+ Entry/Stop/Target: short after third bar confirmation; stop above high.
+ Pro / Con: reliable reversal with confirmation. Rating: 4/5
+
+
+Morning Star / Morning Doji Star — bullish
+ What: mirror of evening star — bottom reversal.
+ Entry/Stop/Target: buy after third bar; stop under low.
+ Pro / Con: strong reversal pattern when validated by volume. Rating: 4/5
+
+
+Hammer — bullish
+ What: small body at top with long lower shadow — rejection of lows.
+ Entry/Stop/Target: buy after confirmation close above hammer; stop below shadow.
+ Pro / Con: common and useful at support; false signals in strong downtrend. Rating: 3.5/5
+
+
+Inverted Hammer — bullish (when at bottoms)
+ What: small body at bottom with long upper shadow — shows rejection of higher prices at the bottom.
+ Entry/Stop/Target: confirm with next bullish close; stop below low.
+ Pro / Con: weaker than hammer; needs confirmation. Rating: 3/5
+
+
+Hanging Man — bearish
+ What: identical shape to hammer but at top of uptrend — bearish warning.
+ Entry/Stop/Target: confirm with next down candle; stop above high.
+ Pro / Con: early warning but often ignored if trend is strong. Rating: 3/5
+
+
+Kicking — bearish / bullish
+ What: large gap and opposite-direction candlestick with opposite color — sudden reversal signal (often due to news).
+ Entry/Stop/Target: trade confirmed momentum; stop beyond candle.
+ Pro / Con: aggressive pattern usually from gaps — can be decisive. Rating: 3.5/5
+
+
+Marubozu white / black (full body)
+ What: long body with little/no wicks — strong directional conviction (white = bullish, black = bearish).
+ Entry/Stop/Target: trade on follow-through; stop under/above body.
+ Pro / Con: strong continuation sign; may lead to quick follow-through or exhaustion. Rating: 3.5/5
+
+
+Piercing — bullish
+ What: down bar followed by up bar that closes into the previous body by >50% (partial engulf).
+ Entry/Stop/Target: buy on confirmation; stop under low.
+ Pro / Con: useful mid-strength reversal signal. Rating: 3/5
+
+
+On Neck / In Neck — bearish continuation-ish
+ What: patterns where the down candle is followed by small up candle that closes near prior low — signals continuation or weak pause.
+ Entry/Stop/Target: trade continuation on close below support; stop above recent highs.
+ Pro / Con: often continuation rather than reversal — interpret carefully. Rating: 2.5/5
+
+
+Falling three methods — bearish
+ What: consolidation small up candles within an overall down trend — continuation pattern.
+ Entry/Stop/Target: short on continuation breakout; stop above small consolidation.
+ Pro / Con: reliable for continuation; needs trend context. Rating: 3.5/5
+
+
+Rising three methods — bullish
+ What: mirror continuation for uptrend. Rating: 3.5/5
+
+
+Downside Tasuki Gap — bearish / Upside Tasuki Gap — bullish
+ What: 3-bar gap pattern where the third bar closes the gap partially — continuation signal.
+ Entry/Stop/Target: trade in direction of gap if gap remains intact; stop beyond gap fill.
+ Pro / Con: shows continuation in trending market; weaker if gap fills quickly. Rating: 3/5
+
+
+Shooting Star — bearish
+ What: small body near low with long upper wick — rejection of higher prices at top.
+ Entry/Stop/Target: short on confirmation lower close; stop above wick.
+ Pro / Con: reliable at resistance with volume; false in strong trend. Rating: 3.5/5
+
+
+Spinning Top (black/white)
+ What: small body with wicks both sides — indecision.
+ Entry/Stop/Target: trade after confirmation candle and context.
+ Pro / Con: ambiguous alone; useful at key zones. Rating: 2.5/5
+
+
+Three Black Crows — bearish
+ What: three consecutive long bearish bodies with small/closed wicks — strong reversal/continuation depending on prior trend.
+ Entry/Stop/Target: bearish continuation/reversal; stop above recent swing.
+ Pro / Con: powerful when confirmed by volume; can be countered by quick pullbacks. Rating: 3.5/5
+
+
+Three White Soldiers — bullish
+ What: three long bullish candles — strong upside continuation/reversal. Rating: 3.5/5
+
+
+Tweezer Top / Tweezer Bottom
+ What: two candles with equal/highly-similar highs (tweezer top) or lows (tweezer bottom) — potential reversal.
+ Entry/Stop/Target: trade reversal on confirmation; stop beyond tweezers.
+ Pro / Con: quick visual reversal signal; better with divergence/volume confirmation. Rating: 3/5
+
+
+Tri-star bullish / Tri-star bearish
+ What: triple doji pattern signaling strong reversal (rare).
+ Entry/Stop/Target: trade after clear confirmation candle; stop tight.
+ Pro / Con: rare but potentially significant — needs confirmation. Rating: 3.5/5 when valid
+
+
+Long lower shadow / Long upper shadow
+ What: single-bar rejection tails showing rejection of one side.
+ Entry/Stop/Target: trade rejection when at structure; stop beyond shadow.
+ Pro / Con: good micro-reversal signals; context-dependent. Rating: 3/5
+
+
+Harami — bullish / bearish; Harami cross (doji)
+ What: small candle contained within previous large candle’s body — sign of weakening momentum.
+ Entry/Stop/Target: wait for confirmation candle; stop outside pattern.
+ Pro / Con: early sign but requires confirmation. Rating: 3/5
+
+
+Kicking (already listed)
+
+
+Evening doji star / Morning doji star (already listed)
+
+
+Engulfing (spelled Engufing earlier) — covered above.
+
+
+Other named patterns you listed with typos (e.g., “Double button” / “Tripe button” / “Triage”) — corrected and included above.
